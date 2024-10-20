@@ -1,6 +1,6 @@
 const fs = require("fs");
   
-
+try(){
 function getStudentInfo(studentFile , studentID){
 
     let studentInfo = {};
@@ -26,6 +26,9 @@ function getStudentInfo(studentFile , studentID){
                 }
             }
         }
+}
+  catch(err){
+    console.log("error happend, run again");
      
     return studentInfo; // Return the found student or an empty object
 }
